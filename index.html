@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Member</title>
+	<script src='membership.js'></script>
+</head>
+<body>
+<form id='theform'>
+	<div>
+		<label for="type">Type</label>
+		<select name="type" id="type" required>
+		<option value="basic">Basic-$10.00</option>
+		<option value="premium">Premium-$15.00</option>
+		<option value="gold">Gold-$20.00</option>
+		<option value="platinum">Platinum-$25.00</option>
+	</div>
+	<div>
+		<label for="years">Years</label>
+		<input type="number" name="years" id="years" min="1" required>
+	</div>
+	<div>
+		<label for="cost">Cost</label>
+		<input type="text" name="cost" id="cost" disabled>
+	</div>
+	<input type="submit" value="calculate" id="submit">
+</form>
+</body>
+</html>
+
